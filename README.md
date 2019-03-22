@@ -4,8 +4,25 @@ QASpaceReport for Cucumber1 is a Java library for creating proper artifact for J
 
 ## Installation
 
+Add repository in pom.xml file
+```java
+        <repository>
+            <id>Cucumber1-mvn-repo</id>
+            <url>https://raw.github.com/at-lab-development/Cucumber1/mvn-repo/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+```
 Add dependency in pom.xml file
-
+```java
+        <dependency>
+            <groupId>com.epam.jira</groupId>
+            <artifactId>cucumber1</artifactId>
+            <version>1.0</version>
+        </dependency>
+```
 ## Usage
 
 in your Runner add QASpaceReporter as a plugin
